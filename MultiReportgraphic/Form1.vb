@@ -1,6 +1,7 @@
 ﻿Public Class Form1
     Dim nm, n, num
     Dim rnd As New Random
+    Dim label As New List(Of Label)
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         For m = 0 To 41
             nm = 0
@@ -16,6 +17,7 @@
                 pb.Name = "N" & num
                 AddHandler pb.MouseMove, AddressOf PictureBox1_MouseHover
                 AddHandler pb.MouseLeave, AddressOf PictureBox1_Mouseleave
+label.Add(pb)
                 Me.Controls.Add(pb)
                 nm += 10
                 'TextBox1.Text = TextBox1.Text & 0
@@ -57,5 +59,18 @@
         If gt = 10 Then status = "Finished"
         If gt = 11 Then status = "Warning"
 
+    End Sub
+                    
+    Sub update()
+
+        ' Dim pics As New List(Of PictureBox) From {str}
+        For Each pic In label
+            pic.BackColor = Color.FromArgb(255, rnd.Next(255), rnd.Next(255), rnd.Next(255))
+        Next
+    End Sub
+     
+
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        update()
     End Sub
 End Class
