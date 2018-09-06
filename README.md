@@ -12,4 +12,4 @@ i hope to Arrangement them in next version
 i put also timer to update every 600 millisecond of graph very exciting
 
 
-thanks For reading
+Thanks For reading
