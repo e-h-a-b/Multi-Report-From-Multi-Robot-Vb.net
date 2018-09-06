@@ -8,4 +8,6 @@ When moving your mouse on map you will get Status and Location
 when robot make some mission or in step doing something it's going preview status realtime
 
 i hope to Arrangement them in next version
+
+i put also timer to update every 600 millisecond of graph very exciting
 thanks
