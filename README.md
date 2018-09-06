@@ -10,4 +10,6 @@ when robot make some mission or in step doing something it's going preview statu
 i hope to Arrangement them in next version
 
 i put also timer to update every 600 millisecond of graph very exciting
-thanks
+
+
+thanks For reading
